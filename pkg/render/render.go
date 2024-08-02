@@ -72,7 +72,6 @@ func CreateTemplateCache() (map[string]*template.Template, error) {
 		ts, err := template.New(name).ParseFiles(page)
 
 		if err != nil {
-			log.Println("Error is here111")
 			return myCache, err
 		}
 
